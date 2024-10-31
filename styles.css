@@ -1,0 +1,437 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    color: #fff;
+    display: none; /* Hidden by default, shown on small screens */
+}
+
+/* Sidebar Menu */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide by default */
+    transition: 0.3s;
+    z-index: 20;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.active {
+    right: 0; /* Show when active */
+}
+
+.sidebar-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.sidebar-menu li {
+    margin: 1.5rem 0;
+    
+}
+
+.sidebar-menu a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+   
+    margin-left: 80px;
+}
+
+.sidebar-menu a:hover {
+    color: #fe2600;
+}
+
+.sidebar-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.sidebar-footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar-footer i {
+    margin-right: 0.5rem;
+}
+
+/* Close Button Styling */
+.close-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none; /* Hide additional icons on small screens */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+    .navbar_logo
+    {
+        justify-content: center;
+    }
+
+    .sidebar.active {
+        right: 0; /* Show sidebar when active */
+    }
+}
+
+
+
+.skin-care-section {
+    display: flex;
+    gap: 20px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skin-care-section button {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    padding: 10px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .skin-care-section button:hover {
+    background-color: #f1eef0;
+  }
+
+  .sale-button {
+    background-color: #f96a36;
+    border-radius: 10px;
+  }
+
+  
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .skin-care-section {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .skin-care-section button {
+      width: 30%;
+      max-width: 100px;
+    }
+  }
+
+
+
+
+
+
+  .carousel {
+    position: relative;
+    width:100%;  /* Set a fixed width for the carousel */
+    height: 300; /* Set a fixed height for the carousel */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  }
+
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+    width: 200%; /* 100% for each image to make room for two */
+  }
+
+  .carousel img {
+    width: 50%; /* Each image takes up half of the carousel width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .carousel {
+      width: 100%; /* Full width on smaller screens */
+    }
+
+    .carousel img {
+      width: 100%; /* Each image takes full width */
+    }
+  }
+
+
+
+
+  western-section {
+    text-align: center; /* Center the text */
+    margin: 20px;
+  }
+
+  .western-section h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size for the title */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px; /* Space between circles */
+  }
+
+  .circle {
+    width: 100px; /* Width of the circle */
+    height: 100px; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    transition: transform 0.3s; /* Smooth hover effect */
+  }
+
+  .circle img {
+    width: 100%; /* Make image fill the circle */
+    height: 100%; /* Make image fill the circle */
+    object-fit: cover; /* Cover the area without distortion */
+  }
+
+  .circle:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .circle {
+      width: 80px; /* Smaller circle on smaller screens */
+      height: 80px; /* Smaller circle on smaller screens */
+    }
+  }
+
+
+
+
+
+
+  
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Maximum width of the container */
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four cards in a row by default */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Hover effect */
+  }
+
+  .card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Height of the carousel */
+    overflow: hidden;
+  }
+
+  .carousel-images {
+    display: flex;
+    width: 200%; /* Allow space for two images */
+    transition: transform 0.5s ease;
+  }
+
+  .carousel img {
+    width: 50%; /* Each image takes up half of the carousel */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+  }
+
+  .scroll-left {
+    left: 10px;
+  }
+
+  .scroll-right {
+    right: 10px;
+  }
+
+  .cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .cart-icon i {
+    font-size: 24px; /* Size of the cart icon */
+    color: #ff4500; /* Color of the cart icon */
+    margin-right: 5px; /* Space between icon and text */
+  }
+
+  .description {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px; /* Font size for description */
+  }
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* Two cards in a row */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: calc(100% - 20px); /* Two cards in a row */
+    }
+
+    .card-container {
+      flex-direction: column; /* Stack cards in a column */
+    }
+  }
+
+
+
+
+
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .subscribe-section {
+    margin-bottom: 20px;
+  }
+
+  .subscribe-section input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .subscribe-section button {
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .subscribe-section button:hover {
+    background-color: #e03e00;
+  }
+
+  .social-media {
+    margin: 15px 0;
+  }
+
+  .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .social-media a:hover {
+    color: #ff4500;
+  }
+
+  .rights {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  /* Responsive styling */
+  @media (max-width: 480px) {
+    .subscribe-section input[type="email"] {
+      width: 70%; /* Adjust width for smaller screens */
+    }
+
+    .subscribe-section {
+      flex-direction: column;
+    }
+  }

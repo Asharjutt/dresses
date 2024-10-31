@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Sliding Navbar</title>
+</head>
+<body>
+<div class="top"></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="hamburger" id="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+        <div class="navbar-logo">LIMELIGHT</div>
+        <div class="navbar-right">
+            <!-- Additional Icons for Larger Screens -->
+            <i class='bx bxl-whatsapp' style="font-size: 30px;"></i>
+            <i class='bx bxs-phone'style="font-size: 30px;" ></i>
+            <i class='bx bx-package' style=" font-size: 30px;"></i>
+            <i class='bx bx-cart' style="font-size: 30px;"></i>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <i class='bx bx-x close-btn' id="close-btn"></i>
+            <ul class="sidebar-menu">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Girls</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#"><i class='bx bx-log-out'></i> Logout</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="skin-care-section">
+        <button><i class="bx bx-male"></i> Men</button>
+        <button><i class="bx bx-female"></i> Women</button>
+        <button><i class="bx bx-star"></i> Girl</button>
+        <button class="sale-button"><i class="bx bx-purchase-tag"></i> Sale</button>
+      </div>
+
+
+     <div style="margin-left: 10px; margin-top: 5px;"> <a href="" style="text-decoration: none; color: black;">WESTREN</a>
+        <i class="bx bx-right-arrow-alt"></i>
+     </div>
+
+
+     <div class="carousel">
+        <div class="carousel-images">
+          <img src="IMG/chrome_3eq9zWOQzB.png" alt="Image 1">
+          <img src="IMG/chrome_3eq9zWOQzB.png" alt="Image 2">
+        </div>
+      </div>
+
+      <hr style="margin-top: 20px; width: 40%; margin-left: 30%;">
+
+      <div class="western-section">
+        <h2 style="text-align: center; margin-top: 20px;">Western</h2>
+        <div class="image-container">
+          <div class="circle">
+            <img src="IMG\circle 1.avif" alt="Image 1">
+          </div>
+          <div class="circle">
+            <img src="IMG\circle 3.avif" alt="Image 2">
+          </div>
+          <div class="circle">
+            <img src="IMG\circle 4.avif" alt="Image 3">
+          </div>
+          <div class="circle">
+            <img src="IMG\circle 5.avif" alt="Image 4">
+          </div>
+          <div class="circle">
+            <img src="IMG\circle 6.avif" alt="Image 5">
+          </div>
+        </div>
+      </div>
+
+      <hr style="margin-top: 70px; width: 40%; margin-left: 30%;margin-bottom: 50px;">
+
+
+
+
+
+
+
+      <div class="card-container">
+        <div class="card">
+          <div class="carousel">
+            <button class="scroll-button scroll-left" onclick="scrollCarousel(this)">&#10094;</button>
+            <div class="carousel-images">
+              <img src="IMG/imagea1.png" alt="Image 1A">
+              <img src="https://www.limelight.pk/cdn/shop/files/DSC04453_d0103470-e120-44ab-965f-b682ff9c3fc9.jpg?v=1730272292" alt="Image 1B">
+            </div>
+            <button class="scroll-button scroll-right" onclick="scrollCarousel(this)">&#10095;</button>
+          </div>
+          <div class="cart-icon">
+            <i class="bx bx-cart"></i>
+            <span>Add to Cart</span>
+          </div>
+          <div class="description">250$</div>
+        </div>
+    
+        <div class="card">
+          <div class="carousel">
+            <button class="scroll-button scroll-left" onclick="scrollCarousel(this)">&#10094;</button>
+            <div class="carousel-images">
+              <img src="https://www.limelight.pk/cdn/shop/files/DSC04117_f7306dc7-7738-43ed-96fb-fb0a68cc9095_120x.jpg?v=1730112903" alt="Image 2A">
+              <img src="https://www.limelight.pk/cdn/shop/files/DSC04124_120x.jpg?v=1730112903" alt="Image 2B">
+            </div>
+            <button class="scroll-button scroll-right" onclick="scrollCarousel(this)">&#10095;</button>
+          </div>
+          <div class="cart-icon">
+            <i class="bx bx-cart"></i>
+            <span>Add to Cart</span>
+          </div>
+          <div class="description">90$</div>
+        </div>
+    
+        <div class="card">
+          <div class="carousel">
+            <button class="scroll-button scroll-left" onclick="scrollCarousel(this)">&#10094;</button>
+            <div class="carousel-images">
+              <img src="https://www.limelight.pk/cdn/shop/files/DSC04317_120x.jpg?v=1730111548" alt="Image 3A">
+              <img src="https://www.limelight.pk/cdn/shop/files/DSC04312_f7cb5277-0cea-4f40-ade3-dbc07956923b_120x.jpg?v=1730111548" alt="Image 3B">
+            </div>
+            <button class="scroll-button scroll-right" onclick="scrollCarousel(this)">&#10095;</button>
+          </div>
+          <div class="cart-icon">
+            <i class="bx bx-cart"></i>
+            <span>Add to Cart</span>
+          </div>
+          <div class="description">150$</div>
+        </div>
+    
+        <div class="card">
+          <div class="carousel">
+            <button class="scroll-button scroll-left" onclick="scrollCarousel(this)">&#10094;</button>
+            <div class="carousel-images">
+              <img src="https://www.limelight.pk/cdn/shop/files/I8351CS-MED-OWN_5_FurCapeShawl_120x.jpg?v=1730268334" alt="Image 4A">
+              <img src="https://www.limelight.pk/cdn/shop/files/I8351CS-MED-OWN_4_FurCapeShawl_120x.jpg?v=1730268335" alt="Image 4B">
+            </div>
+            <button class="scroll-button scroll-right" onclick="scrollCarousel(this)">&#10095;</button>
+          </div>
+          <div class="cart-icon">
+            <i class="bx bx-cart"></i>
+            <span>Add to Cart</span>
+          </div>
+          <div class="description">100$</div>
+        </div>
+      </div><br><br>
+    
+
+
+
+
+
+
+  <footer>
+    <div class="subscribe-section">
+      <h3>Subscribe to Our Newsletter</h3><br>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </div>
+
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" class="bx bxl-facebook"></a>
+      <a href="https://whatsapp.com" target="_blank" class="bx bxl-whatsapp"></a>
+      <a href="https://instagram.com" target="_blank" class="bx bxl-instagram"></a>
+      <a href="https://twitter.com" target="_blank" class="bx bxl-twitter"></a>
+    </div>
+
+    <div class="rights">
+      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+<script>
+function scrollCarousel(button) {
+    const carousel = button.parentElement.querySelector('.carousel-images');
+    const direction = button.classList.contains('scroll-right') ? -1 : 1;
+
+    // Move carousel left or right
+    const currentTransform = getComputedStyle(carousel).transform;
+    const currentTranslateX = currentTransform === 'none' ? 0 : parseFloat(currentTransform.split(',')[4]);
+
+    const newTranslateX = direction === 1 ? Math.min(currentTranslateX + (100 / 2), 0) : Math.max(currentTranslateX - (100 / 2), -100);
+    carousel.style.transform = `translateX(${newTranslateX}%)`; // Move carousel
+  }
+
+
+
+
+  // Selecting elements
+const sidebar = document.getElementById('sidebar');
+const hamburger = document.getElementById('hamburger');
+const closeBtn = document.getElementById('close-btn');
+
+// Event listener for hamburger menu click
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+});
+
+// Event listener for close button in the sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+});
+
+
+
+
+// Optional JavaScript for automatic sliding (basic example)
+let index = 0;
+const images = document.querySelector('.carousel-images');
+setInterval(() => {
+  index = (index + 1) % 2; // Cycle through 0 and 1
+  images.style.transform = `translateX(-${index * 100}%)`; // Move carousel
+}, 3000); // Change image every 3 seconds
+
+
+</script>
+
+      </body>
+      </html>
